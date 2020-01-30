@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <div>
         <p>This is the APP</p>
-          <Form/>
+          <Form name="name"/>
       </div>
       
     </div>

@@ -1,15 +1,34 @@
-import React from 'react';
+import React, {useState} from 'react';
+import {withFormik} from 'formik';
 
 
 
-function Form() {
+const Form = ({values, handleChange}) => {
     return (
     <div>
         <p>Form js</p>
+        <form>
+            <label>
+                Name:
+                <input
+                    type="text"
+                    name="name"
+                    value={values.name}
+                    onChange={handleChange}
+                />
+            </label>
+            <button>Submit!</button>
+        </form>
     </div> 
     );
   };
 
 
-
-export default Form;
+const FormikForm = withFormik({
+    mapPropsToValues(props){
+        return {
+            name: props.name
+        }
+    }
+})(Form);
+export default FormikForm;
