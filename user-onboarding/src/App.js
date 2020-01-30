@@ -1,5 +1,5 @@
 import React from 'react';
-import Form from "./Form";
+import Forms from "./Forms";
 import './App.css';
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <div>
         <p>This is the APP</p>
-          <Form name="name"/>
+          <Forms name="name"/>
       </div>
       
     </div>
