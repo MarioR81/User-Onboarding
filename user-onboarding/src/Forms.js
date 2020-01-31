@@ -50,7 +50,7 @@ const Forms = ({values, errors, touched, status}) => {
             <br/>
             <button type="submit" >Submit!</button>
         </Form>
-        {users.map(user => (
+        {users.map(users => (
             <ul key={users.id}>
                 <li>Name: {users.name}</li>
                 <li>Email: {users.email} </li>
